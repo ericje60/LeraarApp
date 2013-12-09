@@ -36,16 +36,23 @@
         
         <!-- LOG IN -->
     	<div id="login" style="display:none;">
-        	<h1 class="title">Log in</h1>
-            <div id="loginform">
-                <span>Voer je naam in:</span>
-                <h5 id="naam-val" style="display:none;">er is geen naam ingevuld!</h5>
-                <input type="text" id="gebruiker" />
-                <span>Wachtwoord:</span>
-                <h5 id="wachtwoord-val" style="display:none;">er is geen wachtwoord ingevuld!</h5>
-                <input type="password" id="wachtwoord" />
-                <div id="login-button"></div>
+        	<div id="login-header">
+            	<h1>Login</h1>
             </div>
+            <div id="login-logo">
+                <span></span>
+            </div>
+            <div id="loginform">
+                <h5 id="naam-val" style="display:none;">er is geen naam ingevuld!</h5>
+                <input type="text" id="gebruiker" placeholder="Gebruikersnaam"/>
+                <h5 id="wachtwoord-val" style="display:none;">er is geen wachtwoord ingevuld!</h5>
+                <span></span>
+                <input type="password" id="wachtwoord" placeholder="Wachtwoord"/>
+                <div id="login-button">
+                	<h2>Login</h2>
+                </div>
+            </div>
+            <div class="onderbalk"></div>
         </div>
         
         <!-- HEADER -->

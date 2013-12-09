@@ -9,14 +9,14 @@ body, html{
 	height:768px;
 	float:left;	
 	position:relative;
-	background:#e7f6f5;
+	background:white;
 }
 
 #statusbalk{
 	float:left;
 	height:20px;
 	width:100%;
-	background:#16aa9e;
+	background:#f59833;
 }
 
 /* ----- TYPOGRAFIE ----- */
@@ -36,12 +36,23 @@ body, html{
     src: url(../font/OpenSans-CondBold.ttf);
 }
 
+#login-header h1, #login #loginform #gebruiker, #login #loginform #wachtwoord{
+	font-family: SourceSansPro;
+}
+
+#laden h3, ::-webkit-input-placeholder {
+	font-family:SourceSansProLight;
+}
+
+#login #login-button h2{
+	font-family: OpenSansCondBold;	
+}
 
 /* ----- SPLASHSCREEN ----- */
 
 #splashscreen{
-	background:#16aa9e;
-	background: -webkit-radial-gradient(center, ellipse cover, #5ec4bc 0%,#16aa9e 100%);
+	background:#f59833;
+	background: -webkit-radial-gradient(center, ellipse cover, #f5c033 0%,#f59833 100%);
 	width:100%;
 	height:100%;	
 	position:absolute;
@@ -70,7 +81,6 @@ body, html{
 }
 
 #laden h3{
-	font-family: SourceSansProLight;
 	font-size:24px;
 	color:white;
 	text-align:center;	
@@ -87,43 +97,101 @@ body, html{
 	position:relative;
 }
 
-#login .title, #login #loginform{
-	margin:0 auto;
-	width:512px;
+#login-header{
+	width:100%;
+	heihgt:45px;
+	background:#f59833;
+	border-bottom:1px solid #cb7a00;	
+	float:left;
+}
+
+#login-header h1{
+	color:white;
+	font-size:18px;
+	line-height:45px;
 	text-align:center;	
+	font-weight:normal;
+	margin:0;
+}
+
+#login-logo{
+	margin:0 auto;
+	width:170px;
+	height:236px;
+	padding:101px 0px 60px 0px;	
+}
+
+#login-logo span {
+	float:left;
+	width:100%;
+	height:100%;
+	background:url(../images/elements/quora_logo_zilver.png) no-repeat;	
 }
 
 #login #loginform{
-	height:512px;
-}
-
-#login #title h1{
-	margin:0;
-	padding-top:50px;	
-	padding-bottom:20px;
+	margin:0 auto;
+	padding:30px;
+	padding-bottom:50px;
+	background:#f8f8f8;
+	border:1px solid #bdc3c7;
+	border-bottom:none;
+	width:322px;
+	text-align:center;	
+	height:239px;
 }
 
 #login #loginform span{
-	width:320px;
+	width:322px;
 	float:left;	
-	margin:20px 96px 10px;
+	height:1px;
+	background:#bdc3c7;
+	margin:0 auto;
 	text-align:left;
 }
 
 #login #loginform #gebruiker, #login #loginform #wachtwoord{
-    height: 64px;
-	width:320px;
+    height: 61px;
+	width:280px;
+	padding:0 20px;
 	float:left;
-	margin:0 96px;
-    text-align: center;
-	border:1px solid #16aa9e;
+	border:1px solid #bdc3c7;
+	border-radius:0px;
+	font-size:32px;
 }
 
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #bdc3c7;
+}
+
+input:focus::-webkit-input-placeholder { color:transparent; }
+
+#login #loginform #gebruiker{ border-bottom:none; }
+#login #loginform #wachtwoord{ border-top:none; }
+
 #login #login-button{
-	width:140px;
+	width:320px;
 	height:64px;
-	background:	#16aa9e;
+	background:	#f59833;
+	float:left;
+	border:1px solid #cb7a00;
+	margin-top:25px;
+}
+
+#login #login-button h2{
+	color:white;
+	font-weight:normal;
+	text-align:center;
+	font-size:32px;
+	margin:0;
+	line-height:64px;	
+}
+
+.onderbalk{
+	width:100%;
+	height:50px;
 	position:absolute;
+	background:#f59833;
+	border-top: 1px solid #cb7a00;
 	bottom:0;
 }
 
