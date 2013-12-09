@@ -1,4 +1,5 @@
-laadcount = 2; // 2,5 seconde laden
+var laadcount = 2; // 2,5 seconde laden
+var disableScroll = true; // disable scrollen op de iPad
 
 $(function() {
 	for (var i=0;i<laadcount;i++)
@@ -11,7 +12,7 @@ $(function() {
 	});
 });
 
-
+/* ----- Laadpuntjes weergeven ----- */
 
 function laden(x) {
 	$('#laden h3')
@@ -37,12 +38,20 @@ function laden(x) {
 	});
 }
 
+/* ----- Log in pagina weergeven ----- */
+
 function loginShow(){
-	$('#splashscreen').hide();
+	disableScrolling();
+	$('#header').hide();
+	$('#splashscreen').remove();
 	$('#login').show();	
 }
 
+/* ----- Quiz pagina weergeven ----- */
+
 function quizShow(){
+	$('#header').show();
+	enableScrolling();
 	gebnaam = $('#gebruiker').val();
 	ww = $('#wachtwoord').val();
 	console.log(gebnaam+" - "+ww);
@@ -60,4 +69,21 @@ function quizShow(){
 		}
 	}
 		
+}
+
+/* ----- Disable/Enable scrolling ----- */
+
+function disableScrolling() {
+    disableScroll = true;
+}
+
+
+function enableScrolling() {
+    disableScroll = false;
+}
+
+document.ontouchmove = function(e){
+   if(disableScroll){
+     e.preventDefault();
+   } 
 }
