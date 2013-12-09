@@ -10,6 +10,15 @@ $(function() {
 	$( "#login-button" ).on( "click", function() {
 		quizShow();
 	});
+	
+	$( "#gebruiker" ).on( "focus", function() {
+		hideVal();
+		
+	});
+	
+	$( "#wachtwoord" ).on( "focus", function() {
+		hideVal();
+	});
 });
 
 /* ----- Laadpuntjes weergeven ----- */
@@ -50,8 +59,6 @@ function loginShow(){
 /* ----- Quiz pagina weergeven ----- */
 
 function quizShow(){
-	$('#header').show();
-	enableScrolling();
 	gebnaam = $('#gebruiker').val();
 	ww = $('#wachtwoord').val();
 	console.log(gebnaam+" - "+ww);
@@ -59,7 +66,9 @@ function quizShow(){
 	$('#wachtwoord-val').hide();
 	if((gebnaam != "")&&(ww != "")){
 		$('#login').hide();
-		$('#quiz').show();	
+		$('#quiz').show();
+		$('#header').show();
+		enableScrolling();	
 	}else{
 		if(gebnaam == ""){
 			$('#naam-val').show();	
@@ -69,6 +78,13 @@ function quizShow(){
 		}
 	}
 		
+}
+
+/* ----- Validatie items verbergen ----- */
+
+function hideVal(){
+	$('#naam-val').hide();
+	$('#wachtwoord-val').hide();
 }
 
 /* ----- Disable/Enable scrolling ----- */
