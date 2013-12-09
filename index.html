@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="user-scalable=1.0,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <link href="css/app.css" rel="stylesheet" type="text/css" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <script src="js/jquery.js"></script>
+    <script src="js/app.js"></script>
+    <!-- non-retina iPad pre iOS 7 -->
+    <link rel="apple-touch-icon" href="images/appicon/apple-touch-icon-72x72.PNG" sizes="72x72">
+    <!-- non-retina iPad iOS 7 -->
+    <link rel="apple-touch-icon" href="images/appicon/apple-touch-icon-76x76.PNG" sizes="76x76">
+    <!-- retina iPad pre iOS 7 -->
+    <link rel="apple-touch-icon" href="images/appicon/apple-touch-icon-144x144.PNG" sizes="144x144">
+    <!-- retina iPad iOS 7 -->
+    <link rel="apple-touch-icon" href="images/appicon/apple-touch-icon-152x152.png" sizes="152x152">
+    <title>Leraar App Quora</title>
+</head>
+
+<body>
+	<div id="container">
+    	<div id="statusbalk"></div>
+    	<!-- SPLASHSCREEN -->
+    	<div id="splashscreen">
+        	<div id="logo">
+            	<span></span>
+            </div>
+            <div id="laden">
+            	<h3>Laden</h3>
+            </div>
+        </div>
+        <!-- LOG IN -->
+    	<div id="login" style="display:none;">
+        	<h1 class="title">Log in</h1>
+            <div id="loginform">
+                <span>Voer je naam in:</span>
+                <h5 id="naam-val" style="display:none;">er is geen naam ingevuld!</h5>
+                <input type="text" id="gebruiker" />
+                <span>Wachtwoord:</span>
+                <h5 id="wachtwoord-val" style="display:none;">er is geen wachtwoord ingevuld!</h5>
+                <input type="password" id="wachtwoord" />
+                <div id="login-button"></div>
+            </div>
+        </div>
+        <!-- QUIZ -->
+        <div id="quiz" style="display:none;">
+        	
+        </div>
+        <!-- STATISTIEK -->
+        <div id="statistiek" style="display:none;">
+        	
+        </div>
+    </div>
+</body>
+</html>

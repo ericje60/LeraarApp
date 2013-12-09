@@ -1,0 +1,134 @@
+/* ----- ALGEMEEN ----- */
+
+body, html{
+	margin:0;	
+}
+
+#container{
+	width:1024px;
+	height:768px;
+	float:left;	
+	position:relative;
+	background:#e7f6f5;
+}
+
+#statusbalk{
+	float:left;
+	height:20px;
+	width:100%;
+	background:#16aa9e;
+}
+
+/* ----- TYPOGRAFIE ----- */
+
+@font-face{
+    font-family: SourceSansPro;
+    src: url(../font/SourceSansPro-Regular.ttf);
+}
+
+@font-face{
+    font-family: SourceSansProLight;
+    src:url(../font/SourceSansPro-ExtraLight.ttf);
+}
+
+@font-face{
+    font-family: OpenSansCondBold;
+    src: url(../font/OpenSans-CondBold.ttf);
+}
+
+
+/* ----- SPLASHSCREEN ----- */
+
+#splashscreen{
+	background:#16aa9e;
+	background: -webkit-radial-gradient(center, ellipse cover, #5ec4bc 0%,#16aa9e 100%);
+	width:100%;
+	height:100%;	
+	position:absolute;
+}
+
+#logo{
+	margin:0 auto;
+	margin-top:200px;
+	width:221px;
+	height:298px;	
+}
+
+#logo span {
+	float:left;
+	width:100%;
+	height:100%;
+	background:url(../images/elements/quora_logo.png);	
+}
+
+#laden{
+	margin:0 auto;
+	width:280px;
+	height:64px;
+	margin-top:220px;
+	text-align:center;		
+}
+
+#laden h3{
+	font-family: SourceSansProLight;
+	font-size:24px;
+	color:white;
+	text-align:center;	
+	font-weight:normal;
+	margin:0 auto;
+}
+
+
+/* ----- LOG IN ----- */
+
+#login{
+    width: 1024px;
+    height: 768px;
+	position:relative;
+}
+
+#login .title, #login #loginform{
+	margin:0 auto;
+	width:512px;
+	text-align:center;	
+}
+
+#login #loginform{
+	height:512px;
+}
+
+#login #title h1{
+	margin:0;
+	padding-top:50px;	
+	padding-bottom:20px;
+}
+
+#login #loginform span{
+	width:320px;
+	float:left;	
+	margin:20px 96px 10px;
+	text-align:left;
+}
+
+#login #loginform #gebruiker, #login #loginform #wachtwoord{
+    height: 64px;
+	width:320px;
+	float:left;
+	margin:0 96px;
+    text-align: center;
+	border:1px solid #16aa9e;
+}
+
+#login #login-button{
+	width:140px;
+	height:64px;
+	background:	#16aa9e;
+	position:absolute;
+	bottom:0;
+}
+
+
+/* ----- QUIZ ----- */
+
+
+/* ----- STATISTIEK ----- */
