@@ -1,6 +1,6 @@
 var laadcount = 2; // 2,5 seconde laden
 var disableScroll = true; // disable scrollen op de iPad
-
+var currentId = "filter-vak";
 $(function() {
 	for (var i=0;i<laadcount;i++)
 	{ 
@@ -18,6 +18,11 @@ $(function() {
 	
 	$( "#wachtwoord" ).on( "focus", function() {
 		hideVal();
+	});
+	
+	$( ".filter-value" ).on( "click", function() {
+		var newId = $(this).attr('id');
+		filterLijst(newId);
 	});
 });
 
@@ -67,7 +72,6 @@ function quizShow(){
 	if((gebnaam != "")&&(ww != "")){
 		$('#login').hide();
 		$('#quiz').show();
-		$('#header').show();
 		enableScrolling();	
 	}else{
 		if(gebnaam == ""){
@@ -102,4 +106,21 @@ document.ontouchmove = function(e){
    if(disableScroll){
      e.preventDefault();
    } 
+}
+
+function filterLijst(newId){
+	console.log(currentId+" - "+newId);
+	if(currentId != newId){
+		$( ".filter-value" ).each(function() {
+		  $( this ).removeClass( "active" );
+		});
+		$("#"+newId).addClass('active');
+		currentId = newId;
+		var newClass = newId.substring(7);
+		console.log(newClass);
+		$( "#filter-container ul" ).each(function() {
+		  $(this).hide();
+		});
+		$("."+newClass).show();
+	}
 }

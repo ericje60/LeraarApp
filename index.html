@@ -58,70 +58,105 @@
             </div>
         </div>
         
-        <!-- HEADER -->
-        <div id="header" style="display:none;">
-        	<div id="avatar">
-            	<img src="" alt="avatar" />
-            </div>
-            <div id="navigatie">
-            	<div id="nav-quiz" class="nav-item active">
-                
-                </div>
-                <div id="nav-statistiek" class="nav-item">
-                
-                </div>
-            </div>
-            <div id="nav-instellingen">
-            	<span></span>
-            </div>
-        </div>
-        
         <!-- QUIZ -->
         <div id="quiz" style="display:none;">
-        	<div id="quiz-navigatie">
-            	
+        	<div id="quiz-header">
+            	<h1>Quiz</h1>
             </div>
-        	<div id="quiz-content">
-            	<div id="content-header">
-                	<div id="header-vak" class="header-item">
+            <div id="quiz-filter">
+            	<div id="filter-titel" class="titel">
+                	<h2>Bibliotheek</h2>
+                </div>
+                <div id="filter">
+                	<div id="filter-vak" class="filter-value active">
                     	<span>Vak</span>
                     </div>
-                    <div id="header-onderwerp" class="header-item">
-                    	<span>Onderwerp</span>
+                    <div id="filter-thema" class="filter-value">
+                    	<span>Thema</span>
                     </div>
-                    <div id="header-niveau" class="header-item">
-                    	<span>Niveau</span>
-                    </div>
-                    <div id="header-groep" class="header-item">
-                    	<span>groep</span>
-                    </div>
-                    <div id="header-thema" class="header-item">
-                    	<span>thema</span>
-                    </div>
-                    <div id="header-aantal" class="header-item">
-                    	<span>Aantal vragen</span>
+                    <div id="filter-bundel" class="filter-value">
+                    	<span>Bundel</span>
                     </div>
                 </div>
-                <div id="content-items">
-                	<div class="item">
-                    	<div class="item-vragen">
-                        	<ul>
-                            	<li id="vraag1"></li>
-                                <li id="vraag2"></li>
-                                <li id="vraag3"></li>
-                                <li id="vraag4"></li>
-                                <li id="vraag5"></li>
-                                <li id="vraag6"></li>
-                                <li id="vraag7"></li>
-                                <li id="vraag8"></li>
-                                <li id="vraag9"></li>
-                                <li id="vraag10"></li>
-                            </ul>
-                        </div>
-                    </div>
+                <div id="filter-container">
+                	<ul class="vak">
+                    	<li id="rekenen">
+                        	<span class="icon32"></span><h3>Rekenen</h3>
+                        </li>
+                        <li id="taal">
+                        	<span class="icon32"></span><h3>Taal</h3>
+                        </li>
+                        <li id="geschiedenis">
+                        	<span class="icon32"></span><h3>Geschiedenis</h3>
+                        </li>
+                        <li id="aardrijkskunde">
+                        	<span class="icon32"></span><h3>Aardrijkskunde</h3>
+                        </li>
+                        <li id="natuurkunde">
+                        	<span class="icon32"></span><h3>Natuurkunde</h3>
+                        </li>
+                        <li id="engels">
+                        	<span class="icon32"></span><h3>Engels</h3>
+                        </li>
+                    </ul>
+                    <ul class="thema" style="display:none;">
+                    	<li id="sport">
+                        	<span class="icon32"></span><h3>Sport</h3>
+                        </li>
+                        <li id="kerst">
+                        	<span class="icon32"></span><h3>Kerst</h3>
+                        </li>
+                    </ul>
+                    <ul class="bundel" style="display:none;">
+                    	<li id="toveren-met-cijfers">
+                        	<span class="icon32"></span><h3>Toveren met cijfers</h3>
+                        </li>
+                        <li id="nederlands-dicte">
+                        	<span class="icon32"></span><h3>Nederlands Dicté</h3>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        	<div id="quiz-footer">
+        	<div id="quiz-content">
+            	<div id="content-titel" class="titel">
+                	<h2>Vragen</h2>
+                </div>
+                <div id="content-vragen">
+                	<ul id="vragen">
+                    	<li>
+                        	<div class="checkbox checked">
+                            	<span></span>
+                            </div>
+                        </li>
+                        <li>
+                        	<div class="checkbox">
+                            	<span></span>
+                            </div>
+                        </li>
+                        <li>
+                        	<div class="checkbox">
+                            	<span></span>
+                            </div>
+                        </li>
+                        <li>
+                        	<div class="checkbox">
+                            	<span></span>
+                            </div>
+                        </li>
+                        <li>
+                        	<div class="checkbox">
+                            	<span></span>
+                            </div>
+                        </li>
+                        <li>
+                        	<div class="checkbox">
+                            	<span></span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        	<div class="onderbalk">
             	
             </div>
         </div>

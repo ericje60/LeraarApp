@@ -36,11 +36,11 @@ body, html{
     src: url(../font/OpenSans-CondBold.ttf);
 }
 
-#login-header h1, #login #loginform #gebruiker, #login #loginform #wachtwoord, #ww-vergeten{
+#login-header h1, #login #loginform #gebruiker, #login #loginform #wachtwoord, #ww-vergeten, #filter-container ul li h3{
 	font-family: SourceSansPro;
 }
 
-#laden h3, ::-webkit-input-placeholder {
+#laden h3, ::-webkit-input-placeholder, .titel h2 {
 	font-family:SourceSansProLight;
 }
 
@@ -234,5 +234,148 @@ line-height: 70px;
 
 /* ----- QUIZ ----- */
 
+#quiz-filter{
+	width:259px;
+	float:left;
+	height:653px;	
+}
 
+#quiz-header{
+	width:100%;
+	heihgt:45px;
+	background:#f59833;
+	border-bottom:1px solid #cb7a00;	
+	float:left;
+}
+
+#quiz-header h1{
+	color:white;
+	font-size:18px;
+	line-height:45px;
+	text-align:center;	
+	font-weight:normal;
+	margin:0;
+}
+
+.titel h2{
+	margin:0;
+	font-size:44px;
+	text-align:left;
+	line-height:68px;
+	margin-left:24px;
+	color:#bdc3c7;	
+}
+
+#filter-titel{
+	width:259px;
+	height:68px;
+	float:left;	
+}
+
+#filter{
+	height:32px;
+	width:258px;
+	float:left;	
+	border:1px solid #bdc3c7;
+	border-left:none;
+}
+
+.filter-value{
+	border-left:1px solid #bdc3c7;	
+	width:85px;
+	height:32px;
+	float:left;
+}
+
+.filter-value span{
+	font-size:14px;
+	line-height:32px;
+	text-align:center;
+	color:#bdc3c7;	
+	margin:0 auto;
+}
+
+.filter-value.active{ background:#bdc3c7; }
+.filter-value.active span{ color:white; }
+
+#filter-vak span{ margin: 0 31px; }
+#filter-thema span{ margin: 0 23px; }
+#filter-bundel span{ margin: 0 24px; }
+
+#filter-container{
+	float: left;
+	width: 258px;
+	border-right: 1px solid #bdc3c7;
+	height: 549px;	
+	background:#f8f8f8;
+}
+
+#filter-container ul{
+	width:258px;
+	margin:0;
+	-webkit-margin-before: 0px;
+	-webkit-margin-after: 0px;
+	-webkit-padding-start: 0px;	
+}
+
+#filter-container ul li{
+	width:258px;
+	height:64px;
+	float:left;
+	list-style:none;	
+}
+
+#filter-container ul li h3{
+	margin:0;
+	font-size:24px;	
+	color:#bdc3c7;
+	font-weight:normal;
+	line-height:64px;
+}
+
+#content-vragen{
+	width:765px;
+	height:582px;
+	float:left;
+	border-top:1px solid #bdc3c7;	
+}
+
+#vragen{
+	width:765px;
+	margin:0;	
+	-webkit-margin-before: 0px;
+	-webkit-margin-after: 0px;
+	-webkit-padding-start: 0px;	
+	float:left;
+}
+
+#vragen li{
+	width:765px;
+	height:64px;
+	border-bottom:1px solid #f8f8f8;
+	margin:0;	
+	float:left;
+	list-style:none;
+}
+
+.checkbox{
+	width:64px;
+	height:64px;
+	float:left;	
+}
+
+.checkbox span{
+	float:left;
+	width:32px;
+	height:32px;
+	margin:15px;
+	border:1px solid #bdc3c7;
+	border-radius:16px;
+	background:#f8f8f8;
+}
+
+.checkbox.checked span{
+	background:#f59833 url(../images/elements/check.png) center center no-repeat;	
+	border-color:#cc7d05;
+}
 /* ----- STATISTIEK ----- */
