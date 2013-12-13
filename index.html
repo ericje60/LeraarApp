@@ -1,175 +1,164 @@
 <!doctype html>
 <html>
 <head>
-    <meta name="viewport" content="user-scalable=1.0,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-    <link href="css/app.css" rel="stylesheet" type="text/css" />
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="format-detection" content="telephone=no">
-    <script src="js/jquery.js"></script>
-    <script src="js/app.js"></script>
-    <!-- non-retina iPad pre iOS 7 -->
-    <link rel="apple-touch-icon" href="images/appicon/apple-touch-icon-72x72.PNG" sizes="72x72">
-    <!-- non-retina iPad iOS 7 -->
-    <link rel="apple-touch-icon" href="images/appicon/apple-touch-icon-76x76.PNG" sizes="76x76">
-    <!-- retina iPad pre iOS 7 -->
-    <link rel="apple-touch-icon" href="images/appicon/apple-touch-icon-144x144.PNG" sizes="144x144">
-    <!-- retina iPad iOS 7 -->
-    <link rel="apple-touch-icon" href="images/appicon/apple-touch-icon-152x152.png" sizes="152x152">
-    <title>Leraar App Quora</title>
+<meta name="viewport" content="user-scalable=1.0,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<link href="css/app.css" rel="stylesheet" type="text/css" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="format-detection" content="telephone=no">
+<script src="js/jquery.js"></script>
+<script src="js/app.js"></script>
+<!-- non-retina iPad pre iOS 7 -->
+<link rel="apple-touch-icon" href="images/appicon/apple-touch-icon-72x72.PNG" sizes="72x72">
+<!-- non-retina iPad iOS 7 -->
+<link rel="apple-touch-icon" href="images/appicon/apple-touch-icon-76x76.PNG" sizes="76x76">
+<!-- retina iPad pre iOS 7 -->
+<link rel="apple-touch-icon" href="images/appicon/apple-touch-icon-144x144.PNG" sizes="144x144">
+<!-- retina iPad iOS 7 -->
+<link rel="apple-touch-icon" href="images/appicon/apple-touch-icon-152x152.png" sizes="152x152">
+<title>Leraar App Quora</title>
 </head>
 
 <body>
-	<div id="container">
-    	<div id="statusbalk"></div>
+<div id="container">
+  <div id="statusbalk"></div>
         
-        <!-- SPLASHSCREEN -->
-    	<div id="splashscreen"> 
-        	<div id="logo">
-            	<span></span>
-            </div>
-            <div id="laden">
-            	<h3>Laden</h3>
-            </div>
+    <!-- SPLASHSCREEN -->
+    <div id="splashscreen"> 
+        <div id="logo">
+            <span></span>
         </div>
-        
-        <!-- LOG IN -->
-    	<div id="login">
-        	<div id="login-header">
-            	<h1>Login</h1>
-            </div>
-            <div id="login-logo">
-                <span></span>
-            </div>
-            <div id="loginform">
-                <h5 id="naam-val" style="display:none;">vul een juiste gebruikersnaam in!</h5>
-                <input type="text" id="gebruiker" placeholder="Gebruikersnaam"/>
-                <h5 id="wachtwoord-val" style="display:none;">vul het juiste wachtwoord in!</h5>
-                <span></span>
-                <input type="password" id="wachtwoord" placeholder="Wachtwoord"/>
-                <div id="login-button">
-                	<h2>Login</h2>
-                </div>
-                <a id="ww-vergeten" href="">Wachtwoord vergeten?</a>
-            </div>
-            <div class="onderbalk">
-            	<div class="logo-onder"></div>
-            </div>
-        </div>
-        
-        <!-- QUIZ -->
-        <div id="quiz" style="display:none;">
-        	<div id="quiz-header">
-            	<h1>Quiz</h1>
-            </div>
-            <div id="quiz-filter">
-            	<div id="filter-titel" class="titel">
-                	<h2>Bibliotheek</h2>
-                </div>
-                <div id="filter">
-                	<div id="filter-vak" class="filter-value active">
-                    	<span>Vak</span>
-                    </div>
-                    <div id="filter-thema" class="filter-value">
-                    	<span>Thema</span>
-                    </div>
-                    <div id="filter-bundel" class="filter-value">
-                    	<span>Bundel</span>
-                    </div>
-                </div>
-                <div id="filter-container">
-                	<ul class="vak">
-                    	<li id="rekenen">
-                        	<span class="icon32"></span><h3>Rekenen</h3>
-                        </li>
-                        <li id="taal">
-                        	<span class="icon32"></span><h3>Taal</h3>
-                        </li>
-                        <li id="geschiedenis">
-                        	<span class="icon32"></span><h3>Geschiedenis</h3>
-                        </li>
-                        <li id="aardrijkskunde">
-                        	<span class="icon32"></span><h3>Aardrijkskunde</h3>
-                        </li>
-                        <li id="natuurkunde">
-                        	<span class="icon32"></span><h3>Natuurkunde</h3>
-                        </li>
-                        <li id="engels">
-                        	<span class="icon32"></span><h3>Engels</h3>
-                        </li>
-                    </ul>
-                    <ul class="thema" style="display:none;">
-                    	<li id="sport">
-                        	<span class="icon32"></span><h3>Sport</h3>
-                        </li>
-                        <li id="kerst">
-                        	<span class="icon32"></span><h3>Kerst</h3>
-                        </li>
-                    </ul>
-                    <ul class="bundel" style="display:none;">
-                    	<li id="toveren-met-cijfers">
-                        	<span class="icon32"></span><h3>Toveren met cijfers</h3>
-                        </li>
-                        <li id="nederlands-dictee">
-                        	<span class="icon32"></span><h3>Nederlands Dictee</h3>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        	<div id="quiz-content">
-            	<div id="content-titel" class="titel">
-                	<h2>Vragen</h2>
-                </div>
-                <div id="content-vragen">
-                	<ul id="vragen">
-                    	<li>
-                        	<div class="checkbox checked">
-                            	<span></span>
-                            </div>
-                        </li>
-                        <li>
-                        	<div class="checkbox">
-                            	<span></span>
-                            </div>
-                        </li>
-                        <li>
-                        	<div class="checkbox">
-                            	<span></span>
-                            </div>
-                        </li>
-                        <li>
-                        	<div class="checkbox">
-                            	<span></span>
-                            </div>
-                        </li>
-                        <li>
-                        	<div class="checkbox">
-                            	<span></span>
-                            </div>
-                        </li>
-                        <li>
-                        	<div class="checkbox">
-                            	<span></span>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        	<div class="onderbalk">
-            	
-            </div>
-        </div>
-        
-        <!-- STATISTIEK -->
-        <div id="statistiek" style="display:none;">
-        	
-        </div>
-        
-        <!-- INSTELLINGEN -->
-        <div id="instellingen">
-        	
+        <div id="laden">
+            <h3>Laden</h3>
         </div>
     </div>
+  
+  <!-- LOG IN -->
+  <div id="login">
+    <div id="login-header">
+      <h1>Login</h1>
+    </div>
+    <div id="login-logo"> <span></span> </div>
+    <div id="loginform">
+      <h5 id="naam-val" style="display:none;">vul een juiste gebruikersnaam in!</h5>
+      <input type="text" id="gebruiker" placeholder="Gebruikersnaam"/>
+      <h5 id="wachtwoord-val" style="display:none;">vul het juiste wachtwoord in!</h5>
+      <span></span>
+      <input type="password" id="wachtwoord" placeholder="Wachtwoord"/>
+      <div id="login-button">
+        <h2>Login</h2>
+      </div>
+      <a id="ww-vergeten" href="">Wachtwoord vergeten?</a> </div>
+    <div class="onderbalk">
+      <div class="logo-onder"></div>
+    </div>
+  </div>
+  
+  <!-- QUIZ -->
+  <div id="quiz" style="display:none;">
+    <div id="quiz-header">
+      <div id="nav-avatar"> <span></span>
+        <p>Eric Meulendijks</p>
+      </div>
+      <div id="loguit"> 
+      	<span></span>
+      	<p>Uitloggen</p>
+      </div>
+      <div id="navigatie">
+        <ul>
+          <li id="nav-quiz" class="active"> <span></span>
+            <p>Quiz</p>
+          </li>
+          <li id="nav-statistiek"> <span></span>
+            <p>Statistiek</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="quiz-filter">
+      <div id="filter-titel" class="titel">
+        <h2>Bibliotheek</h2>
+      </div>
+      <div id="filter">
+        <div id="filter-vak" class="filter-value active"> <span>Vak</span> </div>
+        <div id="filter-thema" class="filter-value"> <span>Thema</span> </div>
+        <div id="filter-bundel" class="filter-value"> <span>Bundel</span> </div>
+      </div>
+      <div id="filter-container">
+        <ul class="vak">
+          <li id="rekenen"> <span class="icon32"></span>
+            <h3>Rekenen</h3>
+          </li>
+          <li id="taal"> <span class="icon32"></span>
+            <h3>Taal</h3>
+          </li>
+          <li id="geschiedenis"> <span class="icon32"></span>
+            <h3>Geschiedenis</h3>
+          </li>
+          <li id="aardrijkskunde"> <span class="icon32"></span>
+            <h3>Aardrijkskunde</h3>
+          </li>
+          <li id="natuurkunde"> <span class="icon32"></span>
+            <h3>Natuurkunde</h3>
+          </li>
+          <li id="engels"> <span class="icon32"></span>
+            <h3>Engels</h3>
+          </li>
+        </ul>
+        <ul class="thema" style="display:none;">
+          <li id="sport"> <span class="icon32"></span>
+            <h3>Sport</h3>
+          </li>
+          <li id="kerst"> <span class="icon32"></span>
+            <h3>Kerst</h3>
+          </li>
+        </ul>
+        <ul class="bundel" style="display:none;">
+          <li id="toveren-met-cijfers"> <span class="icon32"></span>
+            <h3>Toveren met cijfers</h3>
+          </li>
+          <li id="nederlands-dicte"> <span class="icon32"></span>
+            <h3>Nederlands Dicté</h3>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="quiz-content">
+      <div id="content-titel" class="titel">
+        <h2>Vragen</h2>
+      </div>
+      <div id="content-vragen">
+        <ul id="vragen">
+          <li>
+            <div class="checkbox checked"> <span></span> </div>
+          </li>
+          <li>
+            <div class="checkbox"> <span></span> </div>
+          </li>
+          <li>
+            <div class="checkbox"> <span></span> </div>
+          </li>
+          <li>
+            <div class="checkbox"> <span></span> </div>
+          </li>
+          <li>
+            <div class="checkbox"> <span></span> </div>
+          </li>
+          <li>
+            <div class="checkbox"> <span></span> </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="onderbalk"> </div>
+  </div>
+  
+  <!-- STATISTIEK -->
+  <div id="statistiek" style="display:none;"> </div>
+  
+  <!-- INSTELLINGEN -->
+  <div id="instellingen"> </div>
+</div>
 </body>
 </html>
