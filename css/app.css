@@ -242,26 +242,16 @@ line-height: 70px;
 
 #quiz-header{
 	width:100%;
-	heihgt:45px;
-	background:#f59833;
-	border-bottom:1px solid #cb7a00;	
+	height:64px;
+	background:#262626;
 	float:left;
-}
-
-#quiz-header h1{
-	color:white;
-	font-size:18px;
-	line-height:45px;
-	text-align:center;	
-	font-weight:normal;
-	margin:0;
 }
 
 .titel h2{
 	margin:0;
-	font-size:44px;
+	font-size:34px;
 	text-align:left;
-	line-height:68px;
+	line-height:51px;
 	margin-left:24px;
 	color:#bdc3c7;
 	font-weight:normal;	
@@ -269,7 +259,7 @@ line-height: 70px;
 
 #filter-titel{
 	width:259px;
-	height:68px;
+	height:51px;
 	float:left;	
 }
 
@@ -379,4 +369,100 @@ line-height: 70px;
 	background:#f59833 url(../images/elements/check.png) center center no-repeat;	
 	border-color:#cc7d05;
 }
+
+#navigatie{
+	margin:0 auto;
+	height:64px;
+	width:210px;	
+}
+
+#navigatie ul{
+	width:210px;
+	height:64px;
+	margin:0;
+	padding:0;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	-webkit-padding-start: 0;	
+}
+
+#navigatie ul li{
+	width:105px;
+	height:64px;
+	float:left;
+	margin:0;
+	padding:0;
+	list-style:none;	
+}
+
+#navigatie ul span{
+	width:23px;
+	height:23px;
+	margin:0 auto;	
+	float:left;
+	margin: 10px 41px 0px 41px;
+}
+
+#navigatie ul p{
+	margin:0;
+	color:white;
+	text-align:center;
+}
+
+#nav-quiz span{
+	background:url(../images/elements/quiz-nav-icon.PNG) center center no-repeat;	
+}
+
+#nav-statistiek span{
+	background:url(../images/elements/nav-statistiek-icon.PNG) center center no-repeat;	
+}
+
+#navigatie ul li.active{
+	background:#f59833;	
+}
+
+#nav-avatar{
+	margin-left:30px;
+	width:200px;
+	height:64px;
+	position:absolute;	
+}
+
+#nav-avatar p{
+	margin:0;
+	color:white;
+	line-height: 64px;
+	margin-left: 50px;	
+}
+
+#nav-avatar span{
+	width:32px;
+	height:32px;
+	border-radius:16px;
+	float:left;
+	margin:16px 0;
+	background:#f59833;		
+}
+
+#loguit{
+	width:64px;
+	height:64px;
+	right:30px;
+	position:absolute;	
+}
+
+#loguit span{
+	width:14px;
+	height:18px;
+	background:url(../images/elements/loguit.png) center center no-repeat;
+	float:left;
+	margin:16px 25px 0px 25px;	
+}
+
+#loguit p{
+	margin:0;
+	color:white;
+	text-align:center;	
+}
+
 /* ----- STATISTIEK ----- */
